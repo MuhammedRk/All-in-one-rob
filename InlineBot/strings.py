@@ -4,9 +4,6 @@
 
 from pyrogram import __version__
 from InlineBot import (
-    OWNER_ID,
-    FILTER_COMMAND,
-    DELETE_COMMAND,
     CUSTOM_START_MESSAGE
 )
 
@@ -18,44 +15,14 @@ else:
 I am an Inline Saver Bot, you can save inline filters and It can be use in any of your chats easily, Click help for more details</b> 
 """
 
-HELP_MESSAGE = f"""<b><u>Main Available Commands</u></b>
+HELP_MESSAGE = """<b><u>Basic Commands</u></b>
 
-○ <b>/{FILTER_COMMAND.lower()}</b> <i>[keyword] [message or reply to message]</i>
-    <i>Add an Inline filter, you can use MarkDown for formatting</i>
-    
-○ <b>/{DELETE_COMMAND.lower()}</b> <i>[keyword]</i>
-    <i>Delete existing Filter</i>
-    
-○ <b>/filters</b>
-    <i>To see the filters</i>
-    
-○ <b>/export</b>
-    <i>Export a Backup file of filters, this can be import by others</i>
-    
-○ <b>/stats</b>
-    <i>See the Bot's Statistics</i>
-    
-○ <b>/broadcast</b> <i>[reply to any message]</i>
-    <i>Broadcast any Messages to Bot users</i>
-    
-<b><u>Owner only Commands</u></b>
-
-○ <b>/delall</b>
-    <i>Delete all of the filters</i>
-    
-○ <b>/import</b> <i>[reply to an exported file]</i>
-    <i>Import filters from Backup file</i>
+ > /start : Check Im Alive
+ > /help : Basic Commands
+ > /about : about Bot
 """
 
-ABOUT_MESSAGE = f"""<b><u>ABOUT ME</u></b>
-
-<b>○ Maintained by : <a href='tg://user?id={OWNER_ID}'>This Person</a>
-○ Channel : <a href='https://t.me/CodeXBotz'>Code 𝕏 Botz</a>
-○ Support : <a href='https://t.me/CodeXBotzSupport'>Code 𝕏 Botz Support</a>
-○ Source Code : <a href='https://github.com/CodeXBotz/Inline-Filter-Bot'>Click here</a>
-○ Language : <a href='https://www.python.org/'>Python 3</a>
-○ Library : <a href='https://github.com/pyrogram/pyrogram'>Pyrogram Asyncio {__version__}</a></b>
-"""
+ABOUT_MESSAGE = f"""<b><u>ABOUT ME</u></b>"""
 
 MARKDOWN_HELP = """<b><u>Markdown Formatting</u></b>
 
